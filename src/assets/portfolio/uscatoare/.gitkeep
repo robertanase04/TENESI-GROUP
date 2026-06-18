@@ -1,0 +1,2 @@
+# Drop optimized real photos for the "uscatoare" category here.
+# Then import them in src/content/portfolio.ts and set the item's "image" field.

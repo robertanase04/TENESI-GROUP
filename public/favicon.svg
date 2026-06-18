@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#1a1d21"/>
+  <!-- stylised grain silo -->
+  <g stroke="#f5a623" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- conical roof -->
+    <path d="M20 22 L32 11 L44 22 Z"/>
+    <!-- corrugated body -->
+    <path d="M20 22 H44 V50 H20 Z"/>
+    <line x1="20" y1="29" x2="44" y2="29"/>
+    <line x1="20" y1="36" x2="44" y2="36"/>
+    <line x1="20" y1="43" x2="44" y2="43"/>
+  </g>
+</svg>
