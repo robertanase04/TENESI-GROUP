@@ -7,6 +7,7 @@ import { Reveal, Stagger, StaggerItem } from '../components/ui/Reveal'
 import { SectionHeading } from '../components/ui/SectionHeading'
 import { CTASection } from '../components/sections/CTASection'
 import { PlaceholderImage } from '../components/ui/PlaceholderImage'
+import { usePageMeta } from '../lib/usePageMeta'
 
 // Three.js is heavy and only used in the hero — load it lazily so the rest
 // of the site (and other routes) stay lightweight.
@@ -19,6 +20,7 @@ import { IconArrowRight } from '../components/ui/icons'
 
 export function Home() {
   const { t, lang } = useI18n()
+  usePageMeta(t.seo.home.title, t.seo.home.description)
   const teaser = portfolioItems.filter((p) => p.tall).slice(0, 3)
 
   return (

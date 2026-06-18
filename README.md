@@ -130,6 +130,31 @@ Rămase de adăugat ulterior (opțional):
 
 ---
 
+## SEO, social & analytics
+
+- **Meta complet** în `index.html`: title, description, canonical, keywords, robots.
+- **Social preview** (Open Graph + Twitter Card) cu imagine `og-image.png` 1200×630 —
+  apare când trimiți linkul pe WhatsApp / iMessage / Facebook.
+- **Date structurate** JSON-LD (`GeneralContractor`) cu datele reale de contact.
+- **Titluri per-pagină** în tab-ul browserului (hook `usePageMeta`, bilingv).
+- **PWA**: `site.webmanifest` + set complet de iconițe (favicon SVG/PNG,
+  `apple-touch-icon` pentru ecranul de start iOS).
+- **`robots.txt` + `sitemap.xml`** pentru indexare.
+- **Vercel Analytics** și **Speed Insights** (active automat pe Vercel).
+- **Headere de securitate** + cache pe termen lung pentru asset-uri (în `vercel.json`).
+
+> Domeniul folosit în meta/sitemap este `https://tenesi-group.vercel.app`. Dacă
+> adaugi un domeniu propriu, înlocuiește-l în `index.html`, `public/robots.txt`,
+> `public/sitemap.xml` și `scripts/generate-assets.mjs`.
+
+### Regenerarea iconițelor / imaginii OG
+
+Sursele sunt vectoriale, în `scripts/generate-assets.mjs`. După o modificare:
+
+```bash
+npm run assets   # re-randează PNG-urile în public/
+```
+
 ## Note de design
 
 - **Paletă:** oțel/antracit (`steel-900/950`) ca bază, argintiu metalic

@@ -9,6 +9,38 @@ const en: typeof ro = {
     lang: 'en',
   },
 
+  seo: {
+    home: {
+      title: 'TENESI GROUP SRL — Steel grain silos & Industrial construction',
+      description:
+        'Construction and assembly of steel grain silos, industrial halls, livestock farms and grain dryers. Turnkey delivery, projects across Romania.',
+    },
+    about: {
+      title: 'About us — TENESI GROUP SRL',
+      description:
+        'Over 40 years of experience in agricultural engineering and more than 20 years in silo construction. TENESI GROUP values, process and principles.',
+    },
+    services: {
+      title: 'Services — Silos, Halls, Farms, Dryers | TENESI GROUP',
+      description:
+        'Steel grain silos, light structures and halls, livestock farms, grain dryers and complete turnkey services. Technical specs and European standards.',
+    },
+    portfolio: {
+      title: 'Portfolio — TENESI GROUP projects',
+      description:
+        'A selection of silo, hall, farm and dryer projects delivered by TENESI GROUP across Romania.',
+    },
+    contact: {
+      title: 'Contact — TENESI GROUP SRL',
+      description:
+        'Registered office 54B Chișinău St., Brăila. Phone 0761 503 204, email ciceronetanase@yahoo.com. Request a quote for your project.',
+    },
+    notFound: {
+      title: '404 — Page not found | TENESI GROUP',
+      description: 'The page you are looking for does not exist.',
+    },
+  },
+
   nav: {
     home: 'Home',
     about: 'About',

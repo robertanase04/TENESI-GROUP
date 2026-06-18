@@ -1,0 +1,16 @@
+{
+  "name": "TENESI GROUP SRL",
+  "short_name": "TENESI GROUP",
+  "description": "Silozuri metalice, hale industriale, ferme zootehnice și uscătoare de cereale.",
+  "lang": "ro",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#121417",
+  "theme_color": "#1a1d21",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

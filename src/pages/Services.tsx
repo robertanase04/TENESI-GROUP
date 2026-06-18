@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
+import { usePageMeta } from '../lib/usePageMeta'
 import { PageWrapper } from '../components/ui/PageWrapper'
 import { PageHero } from '../components/sections/PageHero'
 import { CTASection } from '../components/sections/CTASection'
@@ -10,6 +11,7 @@ import { IconArrowRight } from '../components/ui/icons'
 
 export function Services() {
   const { t } = useI18n()
+  usePageMeta(t.seo.services.title, t.seo.services.description)
 
   return (
     <PageWrapper>

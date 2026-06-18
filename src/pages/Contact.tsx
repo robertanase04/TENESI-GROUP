@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { useI18n } from '../i18n'
+import { usePageMeta } from '../lib/usePageMeta'
 import { PageWrapper } from '../components/ui/PageWrapper'
 import { PageHero } from '../components/sections/PageHero'
 import { Reveal } from '../components/ui/Reveal'
@@ -7,6 +8,7 @@ import { IconPhone, IconMail, IconPin, IconClock, IconArrowRight } from '../comp
 
 export function Contact() {
   const { t } = useI18n()
+  usePageMeta(t.seo.contact.title, t.seo.contact.description)
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
 
   // NOTE: there is NO backend. The form is presentational and, on submit,
