@@ -41,7 +41,6 @@ export function About() {
               title={t.about.story.title}
             />
             <div className="mt-7 space-y-5 text-base leading-relaxed text-steel-400">
-              {/* TODO: completează anul înființării și detaliile reale ale firmei */}
               <Reveal><p>{t.about.story.p1}</p></Reveal>
               <Reveal delay={0.05}><p>{t.about.story.p2}</p></Reveal>
               <Reveal delay={0.1}><p>{t.about.story.p3}</p></Reveal>
@@ -56,7 +55,7 @@ export function About() {
             </div>
             {/* floating spec tag */}
             <div className="absolute -bottom-5 -left-3 border border-steel-700 bg-steel-950 px-5 py-4 shadow-xl sm:-left-6">
-              <span className="tech-label">Brăila · RO</span>
+              <span className="tech-label">Inginerie agricolă · RO</span>
               <p className="mt-1 font-display text-sm font-semibold text-steel-100">
                 {t.footer.builtNote}
               </p>

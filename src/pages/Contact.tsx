@@ -14,7 +14,7 @@ export function Contact() {
   // It is ready to be wired to a real endpoint later if desired.
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    const to = t.contact.info.email // [EMAIL_CONTACT] placeholder
+    const to = t.contact.info.email
     const subject = encodeURIComponent(`Cerere ofertă — ${form.name || 'Website TENESI GROUP'}`)
     const body = encodeURIComponent(
       `Nume: ${form.name}\nEmail: ${form.email}\nTelefon: ${form.phone}\n\n${form.message}`,
@@ -45,7 +45,6 @@ export function Contact() {
           {/* Contact info */}
           <Reveal className="lg:col-span-5">
             <h2 className="text-2xl font-bold tracking-tight">{t.contact.info.title}</h2>
-            {/* TODO: completează datele reale de contact ale firmei */}
             <ul className="mt-8 space-y-6">
               {info.map((item) => (
                 <li key={item.label} className="flex items-start gap-4">

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../../i18n'
 import { services } from '../../content/services'
-import { IconSilo, IconPhone, IconMail, IconPin } from '../ui/icons'
+import { IconSilo, IconPhone, IconMail } from '../ui/icons'
 
 export function Footer() {
   const { t } = useI18n()
@@ -65,10 +65,6 @@ export function Footer() {
               <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-safety-500" />
               <span>{t.contact.info.email}</span>
             </li>
-            <li className="flex items-start gap-2.5">
-              <IconPin className="mt-0.5 h-4 w-4 shrink-0 text-safety-500" />
-              <span>{t.contact.info.address}</span>
-            </li>
           </ul>
         </div>
       </div>
@@ -78,7 +74,6 @@ export function Footer() {
           <p>
             © {year} {t.common.companyFull}. {t.footer.rights}
           </p>
-          {/* TODO: completează cu datele reale de înregistrare ale firmei */}
           <p className="text-steel-600">{t.footer.placeholderLegal}</p>
         </div>
       </div>

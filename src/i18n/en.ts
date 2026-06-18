@@ -31,7 +31,7 @@ const en: typeof ro = {
 
   home: {
     hero: {
-      eyebrow: 'Industrial & agri-livestock construction · Brăila, Romania',
+      eyebrow: 'Industrial & agri-livestock construction · Romania',
       titleLine1: 'We build the infrastructure',
       titleLine2: 'that protects',
       titleHighlight: "Romania's harvest",
@@ -69,12 +69,11 @@ const en: typeof ro = {
     stats: {
       eyebrow: 'Why trust us',
       title: 'Reliability you can measure',
-      note: 'Indicative figures — to be updated with the firm’s real data.',
       items: {
-        years: { value: '[YEARS]+', label: 'years of experience' },
-        projects: { value: '[NO]+', label: 'completed projects' },
-        capacity: { value: '[CAP]', label: 'tonnes capacity delivered' },
-        counties: { value: '[NO]', label: 'counties served' },
+        years: { value: '40+', label: 'years of experience in agricultural engineering' },
+        projects: { value: '20+', label: 'years in silo construction' },
+        capacity: { value: 'RO', label: 'projects across all of Romania' },
+        counties: { value: 'INT.', label: 'and projects abroad' },
       },
     },
     portfolioTeaser: {
@@ -100,9 +99,9 @@ const en: typeof ro = {
     story: {
       eyebrow: 'Our story',
       title: 'A dependable partner for farmers and integrators',
-      p1: 'Founded in [AN_INFIINTARE], TENESI GROUP SRL has focused on the turnkey delivery of infrastructure that protects the value of the harvest: steel silos, industrial halls, livestock farms and grain drying plants.',
+      p1: 'With over 40 years of experience in agricultural engineering and more than 20 years in silo construction, TENESI GROUP SRL delivers turnkey the infrastructure that protects the value of the harvest: steel silos, industrial halls, livestock farms and grain drying plants.',
       p2: 'We work with high-strength materials — hot-dip galvanized steel sheet — and follow European design and safety standards. Every project is treated as a long-term investment for our client.',
-      p3: 'From the family farm to large collection centres, the approach stays the same: correctly sized solutions, careful execution and maintenance that extends the life of the investment.',
+      p3: 'From the family farm to large collection centres, we run projects across all of Romania and even beyond its borders, with the same approach: correctly sized solutions, careful execution and maintenance that extends the life of the investment.',
     },
     values: {
       eyebrow: 'Our values',
@@ -235,11 +234,11 @@ const en: typeof ro = {
     info: {
       title: 'Contact details',
       phoneLabel: 'Phone',
-      phone: '[TELEFON_CONTACT]',
+      phone: '0761 503 204',
       emailLabel: 'Email',
-      email: '[EMAIL_CONTACT]',
-      addressLabel: 'Office',
-      address: '[ADRESA_SEDIU], Brăila, Romania',
+      email: 'ciceronetanase@yahoo.com',
+      addressLabel: 'Registered office',
+      address: '54B Chișinău St., Brăila, Romania',
       hoursLabel: 'Hours',
       hours: 'Monday – Friday, 08:00 – 17:00',
     },
@@ -265,8 +264,8 @@ const en: typeof ro = {
     servicesTitle: 'Services',
     contactTitle: 'Contact',
     rights: 'All rights reserved.',
-    placeholderLegal: 'VAT: [CUI] · Trade Reg.: [REG_COM]',
-    builtNote: 'Industrial & agri-livestock construction · Brăila',
+    placeholderLegal: 'VAT: RO33246762 · Trade Reg.: J09/326/2014',
+    builtNote: 'Industrial & agri-livestock construction · Romania',
   },
 
   notFound: {

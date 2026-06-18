@@ -111,15 +111,20 @@ va veni o fotografie reală este marcat în cod cu un comentariu `TODO:`.
 
 ---
 
-## Date de completat (placeholder-uri marcate)
+## Date reale completate
 
-Înlocuiește următoarele în `src/i18n/ro.ts` + `src/i18n/en.ts` (și unde apar în
-`src/content/`):
+Datele firmei sunt deja în `src/i18n/ro.ts` + `src/i18n/en.ts`:
 
-- `[AN_INFIINTARE]` — anul înființării
-- `[ANI]`, `[NR]`, `[CAP]` — cifrele din secțiunea de statistici
-- `[TELEFON_CONTACT]`, `[EMAIL_CONTACT]`, `[ADRESA_SEDIU]` — date de contact
-- `[CUI]`, `[REG_COM]` — date de înregistrare (footer)
+- Experiență: **peste 40 de ani** în inginerie agricolă, **peste 20 de ani** în
+  construcția de silozuri; proiecte pe tot teritoriul României și în afara ei
+- Sediu social: **Str. Chișinău 54B, Brăila** (apare doar pe pagina Contact)
+- Telefon: **0761 503 204** · Email: **ciceronetanase@yahoo.com**
+- CUI: **RO33246762** · Reg. Com.: **J09/326/2014**
+
+Rămase de adăugat ulterior (opțional):
+
+- Fotografiile reale ale proiectelor (vezi secțiunea de mai sus)
+- Un embed Google Maps real pe pagina Contact (acum e un placeholder stilizat)
 
 > Nu au fost inventate cifre, clienți, certificări sau date financiare reale.
 

@@ -30,7 +30,7 @@ const ro = {
 
   home: {
     hero: {
-      eyebrow: 'Construcții industriale & agro-zootehnice · Brăila, România',
+      eyebrow: 'Construcții industriale & agro-zootehnice · România',
       titleLine1: 'Construim infrastructura',
       titleLine2: 'care protejează',
       titleHighlight: 'recolta României',
@@ -68,12 +68,11 @@ const ro = {
     stats: {
       eyebrow: 'Argumente de încredere',
       title: 'Fiabilitate pe care o poți măsura',
-      note: 'Cifre orientative — vor fi actualizate cu datele reale ale firmei.',
       items: {
-        years: { value: '[ANI]+', label: 'ani de experiență' },
-        projects: { value: '[NR]+', label: 'proiecte finalizate' },
-        capacity: { value: '[CAP]', label: 'tone capacitate livrată' },
-        counties: { value: '[NR]', label: 'județe deservite' },
+        years: { value: '40+', label: 'ani de experiență în inginerie agricolă' },
+        projects: { value: '20+', label: 'ani în construcția de silozuri' },
+        capacity: { value: 'RO', label: 'proiecte pe tot teritoriul României' },
+        counties: { value: 'INT.', label: 'și proiecte în afara țării' },
       },
     },
     portfolioTeaser: {
@@ -99,9 +98,9 @@ const ro = {
     story: {
       eyebrow: 'Povestea noastră',
       title: 'Un partener serios pentru fermieri și integratori',
-      p1: 'Înființată în [AN_INFIINTARE], TENESI GROUP SRL s-a concentrat pe livrarea „la cheie” a infrastructurii care protejează valoarea recoltei: silozuri metalice, hale industriale, ferme zootehnice și instalații de uscare a cerealelor.',
+      p1: 'Cu o experiență de peste 40 de ani în inginerie în agricultură și peste 20 de ani în construcția de silozuri, TENESI GROUP SRL livrează „la cheie” infrastructura care protejează valoarea recoltei: silozuri metalice, hale industriale, ferme zootehnice și instalații de uscare a cerealelor.',
       p2: 'Lucrăm cu materiale de înaltă rezistență — tablă de oțel galvanizat la cald — și respectăm normele europene de proiectare și siguranță. Fiecare proiect este tratat ca o investiție pe termen lung a clientului nostru.',
-      p3: 'De la ferma de familie până la centrele mari de colectare, abordarea rămâne aceeași: soluții corect dimensionate, execuție îngrijită și mentenanță care prelungește durata de viață a investiției.',
+      p3: 'De la ferma de familie până la centrele mari de colectare, derulăm proiecte pe tot teritoriul României și chiar și în afara ei, cu aceeași abordare: soluții corect dimensionate, execuție îngrijită și mentenanță care prelungește durata de viață a investiției.',
     },
     values: {
       eyebrow: 'Valorile noastre',
@@ -234,11 +233,11 @@ const ro = {
     info: {
       title: 'Date de contact',
       phoneLabel: 'Telefon',
-      phone: '[TELEFON_CONTACT]',
+      phone: '0761 503 204',
       emailLabel: 'Email',
-      email: '[EMAIL_CONTACT]',
-      addressLabel: 'Sediu',
-      address: '[ADRESA_SEDIU], Brăila, România',
+      email: 'ciceronetanase@yahoo.com',
+      addressLabel: 'Sediu social',
+      address: 'Str. Chișinău 54B, Brăila, România',
       hoursLabel: 'Program',
       hours: 'Luni – Vineri, 08:00 – 17:00',
     },
@@ -264,8 +263,8 @@ const ro = {
     servicesTitle: 'Servicii',
     contactTitle: 'Contact',
     rights: 'Toate drepturile rezervate.',
-    placeholderLegal: 'CUI: [CUI] · Reg. Com.: [REG_COM]',
-    builtNote: 'Construcții industriale & agro-zootehnice · Brăila',
+    placeholderLegal: 'CUI: RO33246762 · Reg. Com.: J09/326/2014',
+    builtNote: 'Construcții industriale & agro-zootehnice · România',
   },
 
   notFound: {
