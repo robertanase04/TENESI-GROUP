@@ -163,7 +163,6 @@ export function Home() {
               return (
                 <StaggerItem key={k}>
                   <div className="flex flex-col items-center bg-steel-950 px-4 py-10 text-center">
-                    {/* TODO: înlocuiește placeholder-ul cu cifra reală a firmei */}
                     <span className="font-display text-4xl font-bold text-safety-500 sm:text-5xl">
                       {item.value}
                     </span>
@@ -173,9 +172,6 @@ export function Home() {
               )
             })}
           </Stagger>
-          <Reveal className="mt-6">
-            <p className="text-center text-xs text-steel-600">{t.home.stats.note}</p>
-          </Reveal>
         </div>
       </section>
 
