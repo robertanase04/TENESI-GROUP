@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useI18n } from '../i18n'
+import { usePageMeta } from '../lib/usePageMeta'
 import { PageWrapper } from '../components/ui/PageWrapper'
 import { PageHero } from '../components/sections/PageHero'
 import { CTASection } from '../components/sections/CTASection'
@@ -17,6 +18,7 @@ const filterKeys: Filter[] = ['all', 'silozuri', 'hale', 'ferme', 'uscatoare']
 
 export function Portfolio() {
   const { t, lang } = useI18n()
+  usePageMeta(t.seo.portfolio.title, t.seo.portfolio.description)
   const [filter, setFilter] = useState<Filter>('all')
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 

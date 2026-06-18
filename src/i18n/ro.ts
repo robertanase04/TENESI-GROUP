@@ -8,6 +8,38 @@ const ro = {
     lang: 'ro',
   },
 
+  seo: {
+    home: {
+      title: 'TENESI GROUP SRL — Silozuri metalice & Construcții industriale',
+      description:
+        'Construcția și montajul de silozuri metalice, hale industriale, ferme zootehnice și uscătoare de cereale. Execuție la cheie, proiecte în toată România.',
+    },
+    about: {
+      title: 'Despre noi — TENESI GROUP SRL',
+      description:
+        'Peste 40 de ani de experiență în inginerie agricolă și peste 20 de ani în construcția de silozuri. Valori, proces și principii TENESI GROUP.',
+    },
+    services: {
+      title: 'Servicii — Silozuri, Hale, Ferme, Uscătoare | TENESI GROUP',
+      description:
+        'Silozuri metalice, structuri ușoare și hale, ferme zootehnice, uscătoare de cereale și servicii complete „la cheie”. Specificații tehnice și standarde europene.',
+    },
+    portfolio: {
+      title: 'Portofoliu — Proiecte TENESI GROUP',
+      description:
+        'Selecție de proiecte de silozuri, hale, ferme și uscătoare realizate de TENESI GROUP pe tot teritoriul României.',
+    },
+    contact: {
+      title: 'Contact — TENESI GROUP SRL',
+      description:
+        'Sediu social Str. Chișinău 54B, Brăila. Telefon 0761 503 204, email ciceronetanase@yahoo.com. Cere o ofertă pentru proiectul tău.',
+    },
+    notFound: {
+      title: '404 — Pagina nu a fost găsită | TENESI GROUP',
+      description: 'Pagina căutată nu există.',
+    },
+  },
+
   nav: {
     home: 'Acasă',
     about: 'Despre noi',

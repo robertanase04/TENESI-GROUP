@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
+import { usePageMeta } from '../lib/usePageMeta'
 import { PageWrapper } from '../components/ui/PageWrapper'
 import { IconSilo, IconArrowRight } from '../components/ui/icons'
 
 export function NotFound() {
   const { t } = useI18n()
+  usePageMeta(t.seo.notFound.title, t.seo.notFound.description)
   return (
     <PageWrapper>
       <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-steel-950 px-5">

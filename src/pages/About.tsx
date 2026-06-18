@@ -1,4 +1,5 @@
 import { useI18n } from '../i18n'
+import { usePageMeta } from '../lib/usePageMeta'
 import { PageWrapper } from '../components/ui/PageWrapper'
 import { PageHero } from '../components/sections/PageHero'
 import { CTASection } from '../components/sections/CTASection'
@@ -21,6 +22,7 @@ const valueIcons = {
 
 export function About() {
   const { t } = useI18n()
+  usePageMeta(t.seo.about.title, t.seo.about.description)
   const valueKeys = ['quality', 'safety', 'onTime', 'durability'] as const
   const stepKeys = ['s1', 's2', 's3', 's4', 's5', 's6'] as const
 
