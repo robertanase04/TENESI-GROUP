@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   TENESI GROUP — Design System
+   Industrial, robust & trustworthy. Steel/anthracite base with a
+   warm "safety yellow" accent (the warning colour found on heavy
+   machinery) and a brushed-metal silver for technical detail.
+   ============================================================ */
+
+@theme {
+  /* --- Steel / anthracite neutrals (backgrounds & surfaces) --- */
+  --color-steel-950: #121417;
+  --color-steel-900: #1a1d21;
+  --color-steel-850: #21252b;
+  --color-steel-800: #2b2f36;
+  --color-steel-700: #383d45;
+  --color-steel-600: #4a505a;
+  --color-steel-500: #646b76;
+  --color-steel-400: #8a8f98;
+  --color-steel-300: #aeb3bb;
+  --color-steel-200: #cdd1d6;
+  --color-steel-100: #e7e9ec;
+
+  /* --- Safety yellow (primary warm accent / CTA) --- */
+  --color-safety-300: #ffce6b;
+  --color-safety-400: #fbb83d;
+  --color-safety-500: #f5a623;
+  --color-safety-600: #d98a12;
+  --color-safety-700: #b06d0a;
+
+  /* --- Steel blue (secondary accent for technical UI) --- */
+  --color-azure-400: #5aa9e6;
+  --color-azure-500: #3d8bcc;
+  --color-azure-600: #2f6fa6;
+
+  /* --- Fonts --- */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* --- Easing / motion --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================================
+   Base layer
+   ============================================================ */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-steel-900 text-steel-200 font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-steel-100;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: var(--color-safety-500);
+    color: var(--color-steel-950);
+  }
+
+  /* Custom scrollbar — technical look */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-steel-950);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-steel-700);
+    border-radius: 0;
+    border: 2px solid var(--color-steel-950);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-steel-600);
+  }
+}
+
+/* ============================================================
+   Reusable component utilities
+   ============================================================ */
+@layer components {
+  /* Section horizontal padding + max width */
+  .container-tenesi {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Monospace-ish technical label (blueprint coordinates / specs) */
+  .tech-label {
+    @apply font-display text-xs font-medium uppercase tracking-[0.25em] text-safety-500;
+  }
+
+  .tech-label-muted {
+    @apply font-display text-xs font-medium uppercase tracking-[0.25em] text-steel-400;
+  }
+
+  /* Primary CTA button — safety yellow */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-safety-500 px-7 py-3.5
+      font-display text-sm font-semibold uppercase tracking-wider text-steel-950
+      transition-all duration-300 hover:bg-safety-400
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-safety-300 focus-visible:ring-offset-2 focus-visible:ring-offset-steel-900;
+  }
+
+  /* Secondary / outline button */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-steel-600 bg-transparent px-7 py-3.5
+      font-display text-sm font-semibold uppercase tracking-wider text-steel-100
+      transition-all duration-300 hover:border-steel-400 hover:bg-steel-800
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-steel-400;
+  }
+}
+
+/* ============================================================
+   Decorative industrial textures (utility classes)
+   ============================================================ */
+
+/* Blueprint technical grid */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(138, 143, 152, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(138, 143, 152, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Brushed steel sheen */
+.bg-brushed {
+  background-image: repeating-linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.012) 0px,
+    rgba(255, 255, 255, 0.012) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+/* Diagonal hazard stripes (safety tape) */
+.hazard-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-safety-500) 0,
+    var(--color-safety-500) 14px,
+    var(--color-steel-950) 14px,
+    var(--color-steel-950) 28px
+  );
+}
+
+/* Radial vignette to focus the hero */
+.bg-vignette {
+  background: radial-gradient(
+    ellipse 90% 70% at 50% 40%,
+    transparent 0%,
+    rgba(18, 20, 23, 0.55) 70%,
+    var(--color-steel-950) 100%
+  );
+}
+
+/* Subtle film-grain overlay (steel texture feel) */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
